@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="114" id="yzy-J3-bTr" customClass="ListCellTableViewCell" customModule="DailyTodo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yzy-J3-bTr" id="fTV-LR-Qym">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lam-vi-kCH">
+                        <rect key="frame" x="0.0" y="0.0" width="514" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-Gs-qUe">
+                                <rect key="frame" x="8" y="46.5" width="498" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.4039215686" green="0.41960784309999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Awt-Gs-qUe" secondAttribute="trailing" constant="8" id="G1L-bT-iEw"/>
+                            <constraint firstItem="Awt-Gs-qUe" firstAttribute="centerX" secondItem="Lam-vi-kCH" secondAttribute="centerX" id="OzB-dm-vXz"/>
+                            <constraint firstItem="Awt-Gs-qUe" firstAttribute="leading" secondItem="Lam-vi-kCH" secondAttribute="leading" constant="8" id="Pmv-MN-Pau"/>
+                            <constraint firstItem="Awt-Gs-qUe" firstAttribute="centerY" secondItem="Lam-vi-kCH" secondAttribute="centerY" id="eMH-Xy-fH7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lam-vi-kCH" secondAttribute="bottom" id="BFw-jl-esl"/>
+                    <constraint firstAttribute="trailing" secondItem="Lam-vi-kCH" secondAttribute="trailing" id="K0z-C2-L1D"/>
+                    <constraint firstItem="Lam-vi-kCH" firstAttribute="leading" secondItem="fTV-LR-Qym" secondAttribute="leading" id="MBC-4y-kEl"/>
+                    <constraint firstItem="Lam-vi-kCH" firstAttribute="top" secondItem="fTV-LR-Qym" secondAttribute="top" id="bF5-LU-4az"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" red="0.40365612509999999" green="0.41988635060000001" blue="0.74948841330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="Lam-vi-kCH" id="qDZ-1u-Q3i"/>
+                <outlet property="listTitleLabel" destination="Awt-Gs-qUe" id="NhC-fS-jMg"/>
+            </connections>
+            <point key="canvasLocation" x="226.08695652173915" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
